@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack a mole</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="logo"><img src="./logo.jpg" alt=""></div>
+        <select name="" id="">
+            <option value="easy" disabled selected>select level</option>
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+        </select>
+        <div id="value">
+            <h2 class="disply-value">Time: <span id="time-left" style="color: blue;">30</span></h2>
+            <h2 class="disply-value">Score: <span id="score" style="color: crimson;">0</span></h2>
+        </div>
+        <div class="square-container">
+            <div class="square" id="0"></div>
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+        </div>
+        <button class="btn" id="btn-start" onclick="startBtn(this)">Start</button>
+        <button class="btn" id="btn-end">End</button>
+    </div>
+
+    <!-- obtained score -->
+
+    <div id="obtained-score">
+        <h2>&nbsp;</h2>
+        <div id="performance">
+            <div>
+                <h4>Highest</h4>
+                <p id="highest-score"></p>
+            </div>
+            <div>
+                <h4>Lowest</h4>
+                <p id="lowest-score">10</p>
+            </div>
+            <div>
+                <h4>Average</h4>
+                <p id="average-score">10</p>
+            </div>
+        </div>
+        <h3>x</h3>
+    </div>
+    <audio controls autoplay loop></audio>
+</body>
+<script src="script.js"></script>
+
+</html>
